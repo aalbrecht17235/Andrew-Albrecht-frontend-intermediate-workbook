@@ -21,6 +21,9 @@ $(document).ready(function () {
         //$('[data-stack]').each(function () {
         if ($('[data-stack="2"]').children().length == 4 || $('[data-stack="3"]').children().length == 4) {
             $('#announce-game-won').text('You won!');
+            if (confirm("Want to play again?")) {
+                location.reload();
+            } else {}
         }
 
     };
